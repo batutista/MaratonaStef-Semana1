@@ -6,8 +6,12 @@
     angular.module('listaTarefasApp')
         .controller('listaTarefasController', listaTarefasController);
 
+
+    // $inject serve para injetar dependências do controller
     listaTarefasController.$inject = ['$scope'];
 
+
+    // A ordem dos parâmetros importa (no caso só tem o parâmetro $scope, mas quando tem mais de um parâmetro a ordem deve ser a mesma do comando $inject)
     function listaTarefasController($scope){
         // Esse this está referenciando o $scope, mas você deve tomar cuidado com o lugar em que você coloca o this
         // Se o this não for colocado no contexto certo ele poderá estar referenciando outra coisa
