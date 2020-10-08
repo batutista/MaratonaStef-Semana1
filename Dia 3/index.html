@@ -59,13 +59,15 @@
     <!-- ### ESPAÇO ALERTAS ### -->
     <div id="alertas" class="container" ng-show="listaMensagens.length">
         <div ng-repeat="msg in listaMensagens track by msg.id" class="alert alert-{{msg.tipo}}" role="alert">
-            {{msg.text}}
+            {{msg.text | limitTo :valor  }}
             <button type="button" class="close" aria-label="Close"
                     ng-click="listaMensagens.splice($index, 1)">
                 <span aria-hidden="true">&times;</span>
             </button>
         </div>
     </div>
+    <button ng-click="valor = valor + 1">+1</button>
+    {{vm.teste | capitalize}} ---------- {{vm.teste2}}
 
     <!-- ### HOME PAGE ### -->
     <div class="container" ng-if="vm.logado">
