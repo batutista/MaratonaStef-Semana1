@@ -1,0 +1,29 @@
+{
+  "name": "semana-1",
+  "version": "1.0.0",
+  "description": "codigos semana 1 angular js maratona da stefanini",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/batutista/MaratonaStef-Semana1.git"
+  },
+  "author": "Italo Queiroz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/batutista/MaratonaStef-Semana1/issues"
+  },
+  "homepage": "https://github.com/batutista/MaratonaStef-Semana1#readme",
+  "dependencies": {
+    "angular": "^1.8.1",
+    "grunt": "^1.3.0",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-connect": "^3.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^3.0.0",
+    "grunt-contrib-uglify": "^5.0.0",
+    "grunt-contrib-watch": "^1.1.0"
+  }
+}
